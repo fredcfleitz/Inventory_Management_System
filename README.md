@@ -8,8 +8,8 @@ A simple program for tracking product and parts inventory.
 
 ## Add Part
 
-![Add Part](https://imgur.com/a/QUsDX17)
+![Add Part](https://i.imgur.com/1cxPY23.png)
 
 ## Modify Product
 
-![Modify Product](https://imgur.com/a/JUrwdpi)
+![Modify Product](https://i.imgur.com/dZBKZcy.png)
