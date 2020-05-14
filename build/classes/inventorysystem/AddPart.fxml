@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorysystem.AddPartController">
+   <children>
+      <HBox layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="272.0" spacing="15.0">
+         <children>
+            <Label text="Add Part">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="inhouse" mnemonicParsing="false" onAction="#inHouseSelect" text="In-House" />
+            <RadioButton fx:id="outsourced" mnemonicParsing="false" onAction="#outsourcedSelect" text="Outsourced" />
+         </children>
+      </HBox>
+      <AnchorPane layoutY="50.0" prefHeight="222.0" prefWidth="400.0">
+         <children>
+            <VBox layoutX="175.0" layoutY="-5.0" prefHeight="226.0" prefWidth="210.0" spacing="7.0">
+               <children>
+                  <TextField fx:id="idField" />
+                  <TextField fx:id="nameField" />
+                  <TextField fx:id="stockField" />
+                  <TextField fx:id="priceField" />
+                  <HBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="210.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="maxField" prefHeight="26.0" prefWidth="54.0" />
+                        <Label prefHeight="27.0" prefWidth="70.0" text="Min" />
+                        <TextField fx:id="minField" prefHeight="26.0" prefWidth="53.0" />
+                     </children>
+                  </HBox>
+                  <TextField fx:id="companyField" />
+               </children>
+            </VBox>
+            <VBox layoutX="14.0" layoutY="8.0" prefHeight="200.0" prefWidth="147.0" spacing="15.0">
+               <children>
+                  <Label text="ID" />
+                  <Label text="Name" />
+                  <Label text="Inv" />
+                  <Label text="Price/Cost" />
+                  <Label prefHeight="18.0" prefWidth="94.0" text="Max" />
+                  <Label fx:id="company_MachineId" prefHeight="18.0" prefWidth="140.0" text="Machine ID" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Button layoutX="286.0" layoutY="324.0" mnemonicParsing="false" onAction="#cancelButton" text="Cancel" />
+      <Button layoutX="180.0" layoutY="324.0" mnemonicParsing="false" onAction="#addButton" text="Save" />
+   </children>
+</AnchorPane>
